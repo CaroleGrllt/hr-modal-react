@@ -22,10 +22,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "microbundle --no-sourcemap --format cjs,esm --css-modules false",
-    "prepublishOnly": "npm run build",
-    "prepare": "npm run build",
-    "postbuild": "cp src/Modal.css dist/Modal.css || copy src\\Modal.css dist\\Modal.css"
+  "build": "microbundle --no-sourcemap --format cjs,esm --css-modules false --jsx React.createElement --jsxFragment React.Fragment",
+  "prepublishOnly": "npm run build",
+  "prepare": "npm run build"
   },
   "peerDependencies": {
     "react": ">=17",
