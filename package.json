@@ -22,9 +22,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "microbundle --no-sourcemap --format cjs,esm --css-modules false --jsx React.createElement --jsxFragment React.Fragment",
-    "prepublishOnly": "npm run build",
-    "prepare": "npm run build"
+  "build": "microbundle --no-sourcemap --format cjs,esm --css-modules false --jsx react",
+  "prepublishOnly": "npm run build",
+  "prepare": "npm run build"
+  },
+  "microbundle": {
+  "jsx": "react"
   },
   "peerDependencies": {
     "react": ">=17",
