@@ -36,13 +36,10 @@ export default function App() {
 ## Props
 
 - `isOpen` *(boolean)* — Affiche la modale si `true`. Défaut: `false`.
-- `onClose` *(function)* — Callback lorsqu'on ferme la modale (clic arrière-plan, bouton ou `Escape`).
+- `onClose` *(function)* — Callback lorsqu'on ferme la modale.
 - `message` *(String)* — Contenu du corps de la modale.
-- `closeBtn` *(String)* — Libellé du bouton de fermeture. Défaut: `"Close"`.
+- `closeBtn` *(String)* — Libellé du bouton de fermeture.
 
-## Développement
-
-- `npm run build` : construit le package dans `dist` avec microbundle.
 
 ## Licence
 
