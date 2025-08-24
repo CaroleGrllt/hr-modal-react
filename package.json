@@ -1,6 +1,6 @@
 {
   "name": "@carole-rg/hr-modal-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Un composant de modal simple pour React.",
   "source": "src/index.js",
   "main": "dist/index.cjs",
@@ -22,9 +22,9 @@
     "dist"
   ],
   "scripts": {
-  "build": "microbundle --no-sourcemap --format cjs,esm --css-modules false --jsx React.createElement --jsxFragment React.Fragment",
-  "prepublishOnly": "npm run build",
-  "prepare": "npm run build"
+    "build": "microbundle --no-sourcemap --format cjs,esm --css-modules false --jsx React.createElement --jsxFragment React.Fragment",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "react": ">=17",
