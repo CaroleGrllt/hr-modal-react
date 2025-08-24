@@ -1,6 +1,6 @@
 # @carole-rg/hr-modal-react
 
-Un composant de modal simple et accessible pour React.
+A simple modal component for React.
 
 ## Installation
 
@@ -21,12 +21,12 @@ export default function App() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <button onClick={() => setOpen(true)}>Ouvrir</button>
+      <button onClick={() => setOpen(true)}>Open</button>
       <Modal
         isOpen={open}
         onClose={() => setOpen(false)}
-        message="Ceci est une modale"
-        closeBtn="Fermer"
+        message="This is a modal"
+        closeBtn="Close"
       />
     </div>
   );
@@ -35,11 +35,10 @@ export default function App() {
 
 ## Props
 
-- `isOpen` *(boolean)* — Affiche la modale si `true`. Défaut: `false`.
-- `onClose` *(function)* — Callback lorsqu'on ferme la modale.
-- `message` *(String)* — Contenu du corps de la modale.
-- `closeBtn` *(String)* — Libellé du bouton de fermeture.
-
+- `isOpen` *(boolean)* — Displays the modal if `true`. Default: `false`.
+- `onClose` *(function)* — Callback when the modal is closed.
+- `message` *(String)* — Contents of the modal body.
+- `closeBtn` *(String)* — Label of the close button.
 
 ## Licence
 
