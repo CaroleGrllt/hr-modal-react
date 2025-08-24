@@ -1,0 +1,49 @@
+{
+  "name": "@carole-rg/hr-modal-react",
+  "version": "1.0.0",
+  "description": "Un composant de modal simple pour React.",
+  "source": "src/index.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.mjs"
+    },
+    "./styles.css": "./dist/Modal.css"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle --no-sourcemap --format cjs,esm --css-modules false",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
+    "postbuild": "cp src/Modal.css dist/Modal.css || copy src\\Modal.css dist\\Modal.css"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "keywords": [
+    "react",
+    "modal",
+    "component"
+  ],
+  "author": "carole grellety",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaroleGrllt/hr-modal-react"
+  },
+  "homepage": "https://github.com/carole-rg/hr-modal-react#readme"
+}
