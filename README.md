@@ -10,6 +10,11 @@ npm install @carole-rg/hr-modal-react
 yarn add @carole-rg/hr-modal-react
 ```
 
+## Prérequis
+
+- Node.js >= 20.19.4
+- npm ou yarn
+
 ## Utilisation
 
 ```jsx
